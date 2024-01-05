@@ -1,5 +1,6 @@
 {
   "name": "travel-agensy",
+  "homepage": "https://mantr88.github.io/travel-agensy/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +13,8 @@
   "dependencies": {
     "modern-normalize": "^2.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
