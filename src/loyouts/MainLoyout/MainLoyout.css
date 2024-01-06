@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: var(--padding-mobile);
+  padding-right: var(--padding-mobile);
+
+  border: 2px solid tomato;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 834px) {
+    width: var(--tablet);
+    padding-left: var(--padding-tablet);
+    padding-right: var(--padding-tablet);
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: var(--desktop);
+    padding-left: var(--padding-desktop);
+    padding-right: var(--padding-desktop);
+  }
+}

@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import App from "./App.tsx";
 import "./index.css";
 import "./styles/variables.css";
 import Home from "./pages/Home";
 import AllAds from "./pages/AllAds.tsx";
+import MainLoyout from "./loyouts/MainLoyout/MainLoyout.tsx";
 
 export const router = createBrowserRouter([
   {
     path: "/travel-agensy/",
-    element: <App />,
+    element: <MainLoyout />,
     children: [
       { path: "/travel-agensy/", element: <Home /> },
       { path: "/travel-agensy/all-ads", element: <AllAds /> },

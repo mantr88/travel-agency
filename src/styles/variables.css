@@ -1,4 +1,5 @@
 :root {
+  /* colors */
   --main-collor: #266294;
   --light-color: #cfe7f5;
   --extra-light-color: #ebf8ff;
@@ -6,4 +7,14 @@
   --accent-color: #e96e25;
   --pale-color: #766f6f;
   --dark-text-color: #111111;
+
+  /* padding */
+  --padding-desktop: 80px;
+  --padding-tablet: 32px;
+  --padding-mobile: 20px;
+
+  /* breakpoints */
+  --desktop: 1440px;
+  --tablet: 834px;
+  --mobile: 390px;
 }
