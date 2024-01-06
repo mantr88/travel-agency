@@ -1,0 +1,24 @@
+.hero-section {
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+
+  color: var(--ultra-light-color);
+  background: url("../../../public/images/hero-image-390.jpg"),
+    lightgray 50% / cover no-repeat;
+}
+
+.hero-text-wrap {
+  position: absolute;
+  top: 80px;
+}
+.hero-slogan {
+}
+.hero-title {
+}
+.hero-btn-wrap {
+}
+.hero-btn-find {
+}
+.hero-btn-create {
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import "./index.css";
 import "./styles/variables.css";
 import Home from "./pages/Home";
 import AllAds from "./pages/AllAds.tsx";
