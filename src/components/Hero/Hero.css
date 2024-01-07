@@ -4,21 +4,56 @@
   width: 100vw;
 
   color: var(--ultra-light-color);
-  background: url("../../../public/images/hero-image-390.jpg"),
-    lightgray 50% / cover no-repeat;
+  background-image: url("../../../public/images/hero-image-390.jpg");
+  background-position: 50% 8%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-section .pict-small {
+  position: absolute;
+  top: 121px;
+  left: 152px;
+  z-index: 2;
 }
 
 .hero-text-wrap {
   position: absolute;
   top: 80px;
+  margin-left: 20px;
+
+  color: var(--ultra-light-color);
 }
 .hero-slogan {
+  width: 255px;
+
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
 }
 .hero-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
 }
 .hero-btn-wrap {
+  position: absolute;
+  top: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 235px;
+  margin-left: 20px;
 }
 .hero-btn-find {
+  border: 1px solid #e96e25;
+  background: #e96e25;
+
+  color: var(--ultra-light-color);
 }
 .hero-btn-create {
+  border: 2px solid #e96e25;
+  color: var(--accent-color);
 }
