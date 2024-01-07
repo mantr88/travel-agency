@@ -1,4 +1,5 @@
 import Button from "../../ui/Button/Button";
+import MobileMenu from "../MobileMenu/MobileMenu";
 import "./Hero.css";
 
 function Hero() {
@@ -15,6 +16,7 @@ function Hero() {
         <Button extraСlassName="hero-btn-find">Знайти оголошення</Button>
         <Button extraСlassName="hero-btn-create">Подати оголошення</Button>
       </div>
+      <MobileMenu />
     </section>
   );
 }
