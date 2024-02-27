@@ -21,6 +21,8 @@
   --light-color: #cfe7f5;
   --extra-light-color: #ebf8ff;
   --ultra-light-color: #f8f7f7;
+  --font-hover-color: #4f85b2;
+  --white-color: #fff;
   --accent-color: #e96e25;
   --pale-color: #766f6f;
   --dark-text-color: #111111;
@@ -70,7 +72,7 @@ li {
 }
 
 a {
-  color: var(--dark-text-color);
+  color: inherit;
   text-decoration: none;
   font-style: normal;
   cursor: pointer;
