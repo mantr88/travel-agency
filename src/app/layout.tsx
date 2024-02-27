@@ -20,7 +20,7 @@ const play = Play({
   subsets: ["latin"],
   variable: "--font-play",
   display: "swap",
-  weight: ["700", "400"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
