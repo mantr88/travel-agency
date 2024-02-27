@@ -7,8 +7,8 @@
   text-align: center;
 }
 
-[class^="number-slide"],
-[class*=" number-slide"] {
+div[class^="number-slide"],
+div[class*=" number-slide"] {
   display: flex;
   flex-direction: column;
   align-items: center;
