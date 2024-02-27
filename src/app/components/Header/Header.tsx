@@ -9,7 +9,7 @@ function Header() {
     <header className={css.headerContainer}>
       <Burger />
       <LogoMobile />
-      <Button>Зареєстуватись</Button>
+      <Button>Зареєструватись</Button>
     </header>
   );
 }

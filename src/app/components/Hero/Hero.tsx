@@ -1,13 +1,15 @@
 import Button from "../../ui/Button/Button";
-// import MobileMenu from "../MobileMenu/MobileMenu";
 import css from "./Hero.module.css";
+
+import balloonPic from "../../../../public/images/pict-small.svg";
+import Image from "next/image";
 
 function Hero() {
   return (
     <section className={css.section}>
       <div className={css.overlay} />
       <div className={css.pictSmall}>
-        <img src="../../../../public/images/pict-small.svg" />
+        <Image src={balloonPic} alt="balloon" />
       </div>
       <div className={css.textWrap}>
         <p className={css.slogan}>Знайди своє місце</p>

@@ -35,6 +35,7 @@
 .slogan {
   width: 255px;
 
+  font-family: var(--font-roboto-condensed);
   font-size: 48px;
   font-weight: 700;
   line-height: 1.25;
@@ -55,12 +56,23 @@
   margin-left: 20px;
 }
 .btnFind {
-  border: 1px solid #e96e25;
-  background: #e96e25;
+  border: 2px solid var(--accent-color);
+  background: var(--accent-color);
 
   color: var(--ultra-light-color);
 }
+
+.btnFind:hover {
+  background: transparent;
+  color: var(--accent-color);
+}
+
 .btnCreate {
   border: 2px solid #e96e25;
   color: var(--accent-color);
+}
+
+.btnCreate:hover {
+  background: var(--accent-color);
+  color: var(--ultra-light-color);
 }
