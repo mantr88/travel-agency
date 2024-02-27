@@ -29,19 +29,19 @@ export default function Criteria() {
       <>
         <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">
-            <div className={` keen-slider__slide ${css["number-slide1"]}`}>
+            <div className={` keen-slider__slide ${css.numberSlide}`}>
               <Image className={css.img} src={housePic} alt="House" />
               <h3 className={css.cardTitle}>Будинки</h3>
             </div>
-            <div className={` keen-slider__slide ${css["number-slide2"]}`}>
+            <div className={` keen-slider__slide ${css.numberSlide}`}>
               <Image className={css.img} src={studioPic} alt="House" />
               <h3 className={css.cardTitle}>Студії</h3>
             </div>
-            <div className={` keen-slider__slide ${css["number-slide3"]}`}>
+            <div className={` keen-slider__slide ${css.numberSlide}`}>
               <Image className={css.img} src={roomPic} alt="House" />
               <h3 className={css.cardTitle}>Кімнати</h3>
             </div>
-            <div className={` keen-slider__slide ${css["number-slide4"]}`}>
+            <div className={` keen-slider__slide ${css.numberSlide}`}>
               <Image className={css.img} src={apartmentPic} alt="House" />
               <h3 className={css.cardTitle}>Квартири</h3>
             </div>
