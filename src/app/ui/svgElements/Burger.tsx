@@ -1,6 +1,9 @@
+import css from "../../components/Header/Header.module.css";
+
 function Burger() {
   return (
     <svg
+      className={css.svg_el}
       width="40"
       height="30"
       viewBox="0 0 40 30"

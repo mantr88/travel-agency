@@ -1,6 +1,8 @@
+import css from "../../components/NavMenu/NavMenu.module.css";
 function Heart() {
   return (
     <svg
+      className={css.svg_el}
       width="24"
       height="24"
       viewBox="0 0 24 24"

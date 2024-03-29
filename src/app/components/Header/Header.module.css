@@ -10,3 +10,9 @@
 
   background: var(--light-color);
 }
+
+.menuBtn:hover {
+  .svg_el path {
+    fill: var(--white-color);
+  }
+}
