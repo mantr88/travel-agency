@@ -8,7 +8,6 @@ export const useScrollLock = (isLocked: boolean) => {
       document.body.style.overflow = "";
     }
 
-    // Cleanup function to reset the overflow style when the component unmounts
     return () => {
       document.body.style.overflow = "";
     };

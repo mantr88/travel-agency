@@ -8,10 +8,11 @@ import Instagram from "@/app/ui/svgElements/Instagram";
 import YouTube from "@/app/ui/svgElements/YouTube";
 
 import css from "./Footer.module.css";
+import gstyles from "../../page.module.css";
 
 export default function Footer() {
   return (
-    <footer className={css.footer}>
+    <footer className={`${css.footer} ${gstyles.container}`}>
       <div className={css.blocksWrap}>
         <nav>
           <ul className={css.navList}>

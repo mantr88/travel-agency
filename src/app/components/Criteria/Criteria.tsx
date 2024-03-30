@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import css from "./Criteria.module.css";
 import "keen-slider/keen-slider.min.css";
+import gstyles from "../../page.module.css";
 
 import housePic from "../../../../public/images/binyaminMellish-375.jpg";
 import studioPic from "../../../../public/images/studioImage-375.jpg";
@@ -24,7 +25,7 @@ export default function Criteria() {
     },
   });
   return (
-    <section className={css.section}>
+    <section className={`${css.section} ${gstyles.container}`}>
       <h1 className={css.title}>Критерії оголошення</h1>
       <>
         <div className="navigation-wrapper">

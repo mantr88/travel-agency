@@ -7,6 +7,7 @@ import Burger from "../../ui/svgElements/Burger";
 import LogoMobile from "../../ui/svgElements/LogoMobile";
 import NavMenu from "../NavMenu/NavMenu";
 import css from "./Header.module.css";
+import gstyles from "../../page.module.css";
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -15,7 +16,7 @@ function Header() {
   };
   return (
     <>
-      <header className={css.headerContainer}>
+      <header className={`${css.headerContainer} ${gstyles.container}`}>
         <button className={css.menuBtn} onClick={toggleShowMenu}>
           <Burger />
         </button>

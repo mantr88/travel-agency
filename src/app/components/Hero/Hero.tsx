@@ -1,13 +1,14 @@
 import Button from "../../ui/Button/Button";
 import css from "./Hero.module.css";
+import gstyles from "../../page.module.css";
 
 import balloonPic from "../../../../public/images/pict-small.svg";
 import Image from "next/image";
 
 function Hero() {
   return (
-    <section className={css.section}>
-      <div className={css.overlay} />
+    <section className={`${css.section}`}>
+      <div className={`${css.overlay}`} />
       <div className={css.pictSmall}>
         <Image src={balloonPic} alt="balloon" />
       </div>

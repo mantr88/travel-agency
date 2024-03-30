@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto_Condensed, Play, Josefin_Slab } from "next/font/google";
 import "./globals.css";
+import css from "./page.module.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
@@ -43,7 +44,7 @@ export default function RootLayout({
       </head>
       <body>
         <Header />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
