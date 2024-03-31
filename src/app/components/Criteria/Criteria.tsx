@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
@@ -24,9 +25,10 @@ export default function Criteria() {
       setLoaded(true);
     },
   });
+
   return (
     <section className={`${css.section} ${gstyles.container}`}>
-      <h1 className={css.title}>Критерії оголошення</h1>
+      <h2 className={css.title}>Критерії оголошення</h2>
       <>
         <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">
