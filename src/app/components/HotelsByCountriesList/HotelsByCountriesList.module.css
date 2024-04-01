@@ -15,10 +15,10 @@
   line-height: 1;
 
   text-decoration: underline;
+}
 
-  &:hover {
-    color: var(--font-hover-color);
-  }
+.allAdsLink:hover {
+  color: var(--font-hover-color);
 }
 
 .cityName {
