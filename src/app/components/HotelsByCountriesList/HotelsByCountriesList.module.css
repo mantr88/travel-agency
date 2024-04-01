@@ -1,2 +1,35 @@
 .hotelsListItem {
+  margin-top: 20px;
+}
+
+.countryName {
+  font-size: 24px;
+  line-height: 1;
+}
+.allAdsLink {
+  display: block;
+  margin: 20px 0;
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--font-hover-color);
+  }
+}
+
+.cityName {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.hotelQuantity {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
 }

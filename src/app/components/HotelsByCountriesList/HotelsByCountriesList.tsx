@@ -8,6 +8,8 @@ import Arrow from "@/app/ui/svgElements/Arrow";
 import { Hotel } from "@/app/types/hotel";
 import Link from "next/link";
 import Image from "next/image";
+import { formatHotelQuantity } from "@/app/helpers/formatHotelQuantity";
+import { UUID } from "crypto";
 
 interface Props {
   hotels: Hotel[];
@@ -66,25 +68,30 @@ export default function HotelsByCountriesList({ hotels }: Props) {
 
   return (
     <>
-      <li className={css.hotelsListItem} key={hotels[0].countryName}>
+      <li className={css.hotelsListItem}>
         <div ref={sliderRef} className="keen-slider">
-          {hotels.map(({ countryName, city }, idx) => {
+          {hotels.map(({ countryName, countryNameUkr, city }, idx) => {
             return (
-              <div
-                className={`
+              <div key={`${city.cityName}-${idx}`}>
+                <div
+                  className={`
                 keen-slider__slide hotels-number-slide1 ${css.slide}`}
-                key={city.cityName}
-              >
-                <h3>{countryName}</h3>
-                <Link href="/all-ads">Відкрити всі оголошення</Link>
-                <Image
-                  src={city.photo}
-                  alt={city.cityName}
-                  width="350"
-                  height="250"
-                />
-                <h4>{city.cityName}</h4>
-                <p>{city.hotelQuantity} готелів</p>
+                >
+                  <h3 className={css.countryName}>{countryNameUkr}</h3>
+                  <Link href="/all-ads" className={css.allAdsLink}>
+                    Відкрити всі оголошення
+                  </Link>
+                  <Image
+                    src={city.photo}
+                    alt={city.cityName}
+                    width="350"
+                    height="250"
+                  />
+                  <h4 className={css.cityName}>{city.cityName}</h4>
+                  <p className={css.hotelQuantity}>
+                    {formatHotelQuantity(city.hotelQuantity)} готелів
+                  </p>
+                </div>
               </div>
             );
           })}

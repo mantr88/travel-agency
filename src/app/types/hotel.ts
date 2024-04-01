@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 
 export type Hotel = {
   countryName: string;
+  countryNameUkr: string;
   city: {
     cityName: string;
     photo: StaticImageData;

@@ -4,6 +4,9 @@ import parisPic from "../../public/images/Paris-413px.jpg";
 import veneziaPic from "../../public/images/venezia-413px.jpg";
 import firenzePic from "../../public/images/firenze-413px.jpg";
 import romaPic from "../../public/images/roma-413px.jpg";
+import sevillaPic from "../../public/images/sevilla-413px.jpg";
+import madridPic from "../../public/images/madrid-413px.jpg";
+import mallorcaPic from "../../public/images/mallorca-413px.jpg";
 import { Hotel } from "@/app/types/hotel";
 
 type PopularCountriesType = Hotel[];
@@ -11,6 +14,7 @@ type PopularCountriesType = Hotel[];
 export const popularCountries: PopularCountriesType = [
   {
     countryName: "france",
+    countryNameUkr: "Франція",
     city: {
       cityName: "Nantes",
       photo: nantPic,
@@ -18,6 +22,7 @@ export const popularCountries: PopularCountriesType = [
     },
   },
   {
+    countryNameUkr: "Франція",
     countryName: "france",
     city: {
       cityName: "Montpellier",
@@ -26,6 +31,7 @@ export const popularCountries: PopularCountriesType = [
     },
   },
   {
+    countryNameUkr: "Франція",
     countryName: "france",
     city: {
       cityName: "Paris",
@@ -34,6 +40,7 @@ export const popularCountries: PopularCountriesType = [
     },
   },
   {
+    countryNameUkr: "Італія",
     countryName: "italy",
     city: {
       cityName: "Venezia",
@@ -42,6 +49,7 @@ export const popularCountries: PopularCountriesType = [
     },
   },
   {
+    countryNameUkr: "Італія",
     countryName: "italy",
     city: {
       cityName: "Firenze",
@@ -50,11 +58,39 @@ export const popularCountries: PopularCountriesType = [
     },
   },
   {
+    countryNameUkr: "Італія",
     countryName: "italy",
     city: {
       cityName: "Roma",
       photo: romaPic,
       hotelQuantity: 12809,
+    },
+  },
+  {
+    countryNameUkr: "Іспанія",
+    countryName: "spain",
+    city: {
+      cityName: "Sevilla",
+      photo: sevillaPic,
+      hotelQuantity: 8984,
+    },
+  },
+  {
+    countryNameUkr: "Іспанія",
+    countryName: "spain",
+    city: {
+      cityName: "Madrid",
+      photo: madridPic,
+      hotelQuantity: 15325,
+    },
+  },
+  {
+    countryNameUkr: "Іспанія",
+    countryName: "spain",
+    city: {
+      cityName: "Mallorca",
+      photo: mallorcaPic,
+      hotelQuantity: 9825,
     },
   },
 ];

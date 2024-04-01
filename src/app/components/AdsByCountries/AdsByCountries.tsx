@@ -8,6 +8,7 @@ import gstyles from "../../page.module.css";
 import { groupByCountries } from "@/app/helpers/groupedByCountries";
 import HotelsByCountriesList from "../HotelsByCountriesList/HotelsByCountriesList";
 import { Hotel } from "@/app/types/hotel";
+import { randomUUID } from "crypto";
 
 export default function AdsByCountries() {
   const groupedHotels: Record<string, Hotel[]> = groupByCountries(
@@ -17,10 +18,11 @@ export default function AdsByCountries() {
 
   return (
     <section className={gstyles.container}>
-      <h2>Найпопулярніші країни для подорожей</h2>
+      <h2 className={css.title}>Найпопулярніші країни для подорожей</h2>
       <ul>
         <HotelsByCountriesList hotels={groupedHotels.france} />
         <HotelsByCountriesList hotels={groupedHotels.italy} />
+        <HotelsByCountriesList hotels={groupedHotels.spain} />
       </ul>
     </section>
   );
