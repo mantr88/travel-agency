@@ -1,0 +1,14 @@
+.allAdsLink {
+  display: block;
+  margin: 20px 0;
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+
+  text-decoration: underline;
+}
+
+.allAdsLink:hover {
+  color: var(--font-hover-color);
+}
