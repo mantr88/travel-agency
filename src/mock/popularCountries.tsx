@@ -7,9 +7,9 @@ import romaPic from "../../public/images/roma-413px.jpg";
 import sevillaPic from "../../public/images/sevilla-413px.jpg";
 import madridPic from "../../public/images/madrid-413px.jpg";
 import mallorcaPic from "../../public/images/mallorca-413px.jpg";
-import { Hotel } from "@/app/types/hotel";
+import { City } from "@/app/types/city";
 
-type PopularCountriesType = Hotel[];
+type PopularCountriesType = City[];
 
 export const popularCountries: PopularCountriesType = [
   {

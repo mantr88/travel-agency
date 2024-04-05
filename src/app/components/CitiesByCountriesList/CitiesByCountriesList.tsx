@@ -2,20 +2,21 @@
 
 import { useEffect, useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
-import css from "./HotelsByCountriesList.module.css";
-import Arrow from "@/app/ui/svgElements/Arrow";
-import { Hotel } from "@/app/types/hotel";
-import Link from "next/link";
 import Image from "next/image";
+
 import { formatHotelQuantity } from "@/app/helpers/formatHotelQuantity";
-import { UUID } from "crypto";
+import { City } from "@/app/types/city";
+import Arrow from "@/app/ui/svgElements/Arrow";
+
+import "keen-slider/keen-slider.min.css";
+import css from "./CitiesByCountriesList.module.css";
+import { LinkToAllAds } from "@/app/ui/LinkToAllAds/link-to-all-ads.component";
 
 interface Props {
-  hotels: Hotel[];
+  cities: City[];
 }
 
-export default function HotelsByCountriesList({ hotels }: Props) {
+export default function CitiesByCountriesList({ cities }: Props) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -69,18 +70,16 @@ export default function HotelsByCountriesList({ hotels }: Props) {
   return (
     <>
       <li className={css.hotelsListItem}>
+        <h3 className={css.countryName}>{cities[0].countryNameUkr}</h3>
+        <LinkToAllAds />
         <div ref={sliderRef} className="keen-slider">
-          {hotels.map(({ countryName, countryNameUkr, city }, idx) => {
+          {cities.map(({ city }, idx) => {
             return (
               <div key={`${city.cityName}-${idx}`}>
                 <div
                   className={`
                 keen-slider__slide hotels-number-slide1 ${css.slide}`}
                 >
-                  <h3 className={css.countryName}>{countryNameUkr}</h3>
-                  <Link href="/all-ads" className={css.allAdsLink}>
-                    Відкрити всі оголошення
-                  </Link>
                   <Image
                     src={city.photo}
                     alt={city.cityName}

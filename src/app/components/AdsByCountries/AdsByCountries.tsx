@@ -6,12 +6,12 @@ import { popularCountries } from "../../../mock/popularCountries";
 import css from "./AdsByCountries.module.css";
 import gstyles from "../../page.module.css";
 import { groupByCountries } from "@/app/helpers/groupedByCountries";
-import HotelsByCountriesList from "../HotelsByCountriesList/HotelsByCountriesList";
-import { Hotel } from "@/app/types/hotel";
+import CitiesByCountriesList from "../CitiesByCountriesList/CitiesByCountriesList";
+import { City } from "@/app/types/city";
 import { randomUUID } from "crypto";
 
 export default function AdsByCountries() {
-  const groupedHotels: Record<string, Hotel[]> = groupByCountries(
+  const groupedCities: Record<string, City[]> = groupByCountries(
     popularCountries,
     "countryName"
   );
@@ -20,9 +20,9 @@ export default function AdsByCountries() {
     <section className={gstyles.container}>
       <h2 className={css.title}>Найпопулярніші країни для подорожей</h2>
       <ul>
-        <HotelsByCountriesList hotels={groupedHotels.france} />
-        <HotelsByCountriesList hotels={groupedHotels.italy} />
-        <HotelsByCountriesList hotels={groupedHotels.spain} />
+        <CitiesByCountriesList cities={groupedCities.france} />
+        <CitiesByCountriesList cities={groupedCities.italy} />
+        <CitiesByCountriesList cities={groupedCities.spain} />
       </ul>
     </section>
   );
