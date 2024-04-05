@@ -20,9 +20,10 @@ function Header() {
         <button className={css.menuBtn} onClick={toggleShowMenu}>
           <Burger />
         </button>
-
-        <LogoMobile />
-        <Button>Зареєструватись</Button>
+        <div>
+          <LogoMobile />
+        </div>
+        <Button extraСlassName={css.registerBtn}>Зареєструватись</Button>
       </header>
       <NavMenu show={showMenu} setShow={() => toggleShowMenu()} />
     </>
