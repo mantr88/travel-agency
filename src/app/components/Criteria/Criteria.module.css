@@ -17,30 +17,17 @@
   min-width: 350px;
   max-height: 100vh;
 }
+
 .cardTitle {
   font-weight: 400;
   font-size: 24px;
 }
 
 .img {
-  width: 350px;
-  height: 280px;
   object-fit: cover;
   margin-bottom: 20px;
-  /* margin-top: 20px; */
 }
 
-/* .number-slide1 {
-}
-
-.number-slide2 {
-}
-
-.number-slide3 {
-}
-
-.number-slide4 {
-} */
 
 .navigation-wrapper {
   position: relative;

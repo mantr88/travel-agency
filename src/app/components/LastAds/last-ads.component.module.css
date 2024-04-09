@@ -5,6 +5,7 @@
 .list {
   display: grid;
   row-gap: 20px;
+  justify-content: center;
 }
 
 .listItem {

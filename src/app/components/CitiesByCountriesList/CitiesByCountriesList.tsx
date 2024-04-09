@@ -83,8 +83,6 @@ export default function CitiesByCountriesList({ cities }: Props) {
                   <Image
                     src={city.photo}
                     alt={city.cityName}
-                    width="350"
-                    height="250"
                   />
                   <h4 className={css.cityName}>{city.cityName}</h4>
                   <p className={css.hotelQuantity}>
