@@ -1,6 +1,7 @@
 import { Hotel } from '@/app/types/hotel';
 import Image from "next/image";
 import css from './last-ads.component.module.css'
+import Star from '@/app/ui/svgElements/Star';
 
 interface LastAdsCardProps {
   hotel: Hotel;
@@ -13,8 +14,8 @@ function LastAdsCard({ hotel }: LastAdsCardProps) {
       <Image src={photo} alt={name} width="350"
         height="250" />
       <h4 className={css.name}>{name}</h4>
-      <p className={css.city}>{city}<span className={css.country}>{country}</span></p>
-      <p className={css.rating}>{rating}</p>
+      <p className={css.city}>{city}, <span className={css.country}>{country}</span></p>
+      <p className={css.rating}><Star /><span>{rating}</span></p>
     </li>
   )
 }

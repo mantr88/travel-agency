@@ -10,13 +10,14 @@ import gstyles from "../../page.module.css";
 // 	hotels: Hotel[];
 // }
 
+
 export function LastAds() {
 	return (
 		<section className={gstyles.container}>
 			<h2 className={css.title}>Останні оголошення</h2>
 			<LinkToAllAds />
 			<ul className={css.list}>{hotels.map((hotel) => {
-				return (<LastAdsCard hotel={hotel} />)
+				return (<LastAdsCard hotel={hotel} key={hotel.name} />)
 			})}</ul>
 		</section>
 	);

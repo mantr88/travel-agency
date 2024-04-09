@@ -1,16 +1,54 @@
 .title {
   margin-top: 20px;
 }
+
 .list {
+  display: grid;
+  row-gap: 20px;
 }
 
-.css.listItem {
+.listItem {
+  font-size: 16px;
 }
-.css.name {
+
+.name {
+  margin-top: 20px;
 }
-.css.city {
+
+.city {
+  margin-top: 8px;
+  color: var(--pale-color);
+  font-weight: 400;
 }
-.css.country {
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 400;
 }
-.css.rating {
+
+.rating>span {
+  margin-left: 8px;
+}
+
+/* .star {
+  fill: var(--main-color)
+} */
+
+/* Responsive styles */
+
+@media screen and (max-width:833px) {
+  .listItem {
+    display: none;
+  }
+
+  .listItem:nth-child(1),
+  .listItem:nth-child(2),
+  .listItem:nth-child(3),
+  .listItem:nth-child(4) {
+    display: block;
+  }
 }
